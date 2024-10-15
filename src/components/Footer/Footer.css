@@ -1,0 +1,125 @@
+.footer {
+    color: #d9d9d9;
+    /* Text color */
+    background-color: #323232;
+    /* Background color */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center align items */
+    gap: 20px;
+    /* Space between items */
+    padding: 10px 6vw;
+    /* Padding around footer */
+    padding-top: 80px;
+    /* Top padding */
+    margin-top: 100px;
+    /* Margin above footer */
+}
+
+.footer-content {
+    width: 100%;
+    /* Full width */
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: 2fr 1fr 1fr;
+    /* Define column sizes */
+    gap: 50px;
+    /* Space between grid items */
+}
+
+.footer-content-center li {
+    color: white;
+    /* Text color for center section items */
+}
+
+.footer-content-left .footer-content-right,
+.footer-content-center {
+    display: flex;
+    /* Use flexbox for alignment */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: start;
+    /* Align items to start */
+    gap: 20px;
+    /* Space between items */
+}
+
+.footer-content-left li .footer-content-right li,
+.footer-content-center li {
+    list-style: none;
+    /* Remove default list styling */
+    margin-bottom: 10px;
+    /* Space below list items */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.footer-content-right li {
+    list-style: none;
+    /* Remove default list styling */
+    margin-bottom: 10px;
+    /* Space below list items */
+}
+
+#no {
+    margin-top: 20px;
+    /* Space above contact number */
+}
+
+#logo {
+    width: 70px;
+    /* Logo width */
+    height: 70px;
+    /* Logo height */
+    margin-bottom: 20px;
+    /* Space below logo */
+}
+
+.footer-social-icons img {
+    width: 20px;
+    /* Social icon width */
+    height: 20px;
+    /* Social icon height */
+    padding: 2px;
+    /* Padding around icons */
+    margin-right: 15px;
+    /* Space to the right of icons */
+}
+
+.footer hr {
+    width: 100%;
+    /* Full width for horizontal line */
+    height: 1px;
+    /* Height of the line */
+    margin: 20px 0;
+    /* Margin above and below line */
+    background-color: grey;
+    /* Line color */
+}
+
+.footer h2 {
+    font-size: 20px;
+    /* Heading font size */
+    color: rgb(234, 195, 195);
+    /* Heading color */
+}
+
+/* Responsive styles */
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        /* Use flexbox for layout */
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 35px;
+        /* Space between items */
+    }
+
+    .footer-copyright {
+        text-align: center;
+        /* Center text for copyright */
+    }
+}

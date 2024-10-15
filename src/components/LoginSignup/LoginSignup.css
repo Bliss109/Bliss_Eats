@@ -1,0 +1,118 @@
+.login-signup {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.56);
+    /* Slightly more readable */
+    display: grid;
+}
+
+.login-signup-form {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Adding a subtle shadow */
+}
+
+.login-signup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.login-signup-title img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.login-signup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-signup-inputs input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    /* Smooth transition */
+}
+
+.login-signup-inputs input:focus {
+    border-color: tomato;
+    /* Change border color on focus */
+}
+
+.login-signup-form button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.login-signup-form button:hover {
+    background-color: #d94c3c;
+    /* Darker shade on hover */
+}
+
+.login-signup-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-signup-condition input {
+    margin-top: 5px;
+}
+
+/* Custom styles for checkbox */
+.login-signup-condition input[type="checkbox"] {
+    width: 16px;
+    /* Increase size for better visibility */
+    height: 16px;
+}
+
+/* Styles for error messages */
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .login-signup-form {
+        width: 90%;
+        /* Full width on smaller screens */
+        padding: 20px;
+        /* Adjust padding */
+    }
+
+    .login-signup-title h2 {
+        font-size: 18px;
+        /* Increase title size for readability */
+    }
+
+    .login-signup-form button {
+        font-size: 16px;
+        /* Increase button size */
+    }
+}

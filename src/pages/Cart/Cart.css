@@ -1,0 +1,225 @@
+/* Main container for the cart */
+.cart {
+    margin-top: 100px;
+    /* Add top margin for spacing */
+}
+
+/* Title styling for cart items */
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    /* Define grid structure */
+    align-items: center;
+    /* Center align items */
+    color: grey;
+    /* Text color */
+    font-size: max(1vw, 12px);
+    /* Responsive font size */
+    text-align: center;
+    /* Center align text */
+    font-weight: bold;
+    /* Bold font */
+}
+
+/* Individual cart item styling */
+.cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    /* Define grid structure */
+    align-items: center;
+    /* Center align items */
+    margin: 10px 0;
+    /* Vertical margin between items */
+    color: black;
+    /* Text color */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Image styling for cart items */
+.cart-items-item img {
+    width: 50px;
+    /* Set image width */
+    margin: auto;
+    /* Center align image */
+}
+
+/* Horizontal line styling */
+.cart hr {
+    height: 1px;
+    /* Set height for line */
+    background-color: #e2e2e2;
+    /* Line color */
+    border: none;
+    /* Remove default border */
+}
+
+/* Cursor styling for the remove item action */
+.cart-items-item .cross {
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+/* Bottom section styling of the cart */
+.cart-bottom {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: flex-end;
+    /* Align content to the right */
+    margin-top: 20px;
+    /* Top margin */
+    padding-right: 20px;
+    /* Right padding */
+}
+
+/* Total section styling */
+.cart-total {
+    margin-right: 20px;
+    /* Right margin */
+}
+
+/* Container for total details */
+.cart-total-container {
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: left;
+    /* Align items to the left */
+    font-size: 16px;
+    /* Font size */
+    color: grey;
+    /* Text color */
+}
+
+/* Styling for total details rows */
+.cart-total-details {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Space out items */
+    width: 200px;
+    /* Fixed width */
+    margin: 5px 0;
+    /* Vertical margin */
+}
+
+/* Paragraph styling in total details */
+.cart-total-details p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Font size */
+    color: black;
+    /* Text color */
+}
+
+/* General horizontal line styling */
+hr {
+    width: 100%;
+    /* Full width */
+    border: none;
+    /* Remove default border */
+    border-top: 1px solid grey;
+    /* Top border styling */
+    margin: 5px 0;
+    /* Vertical margin */
+}
+
+/* Total heading styling */
+.cart-total h2 {
+    position: relative;
+    /* Position relative for adjustments */
+    right: 200px;
+    /* Adjust position */
+}
+
+/* Media queries for tablets */
+@media (max-width: 1024px) {
+
+    /* Adjust grid structure for cart items on smaller screens */
+    .cart-items-title,
+    .cart-items-item {
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
+        /* Define grid structure */
+    }
+
+    .cart-total-container {
+        align-items: center;
+        /* Center align items */
+    }
+
+    .cart-total {
+        margin-right: 10px;
+        /* Right margin adjustment */
+    }
+
+    .cart-total h2 {
+        right: 0;
+        /* Adjust position */
+    }
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    .cart {
+        margin-top: 50px;
+        /* Reduce top margin */
+        padding: 0 10px;
+        /* Add padding */
+    }
+
+    /* Adjust grid structure for cart items on mobile */
+    .cart-items-title,
+    .cart-items-item {
+        grid-template-columns: 1fr 1fr;
+        /* Define grid structure */
+        grid-gap: 10px;
+        /* Gap between items */
+        font-size: max(2vw, 12px);
+        /* Responsive font size */
+    }
+
+    .cart-items-item img {
+        width: 40px;
+        /* Reduce image width */
+    }
+
+    /* Adjust font size for titles and items */
+    .cart-items-title p,
+    .cart-items-item p {
+        font-size: max(2.5vw, 10px);
+        /* Responsive font size */
+    }
+
+    .cart-total-container {
+        align-items: center;
+        /* Center align items */
+        font-size: 14px;
+        /* Font size adjustment */
+    }
+
+    .cart-total-details {
+        width: 100%;
+        /* Full width */
+        justify-content: space-around;
+        /* Space out items */
+    }
+
+    .cart-total h2 {
+        font-size: 18px;
+        /* Adjust heading size */
+        right: 0;
+        /* Adjust position */
+    }
+
+    /* Adjust bottom section for mobile */
+    .cart-bottom {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center align */
+        padding-right: 0;
+        /* Remove right padding */
+    }
+}

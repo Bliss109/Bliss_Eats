@@ -1,0 +1,54 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Universal styles */
+* {
+  padding: 0;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width and height */
+  font-family: Handlee;
+  /* Set the default font family */
+  font-weight: 900;
+  /* Set the default font weight */
+  font-size: 15px;
+  /* Set the default font size */
+}
+
+/* Body styles */
+body {
+  min-height: 100vh;
+  /* Ensure the body takes at least the full viewport height */
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: inherit;
+  /* Inherit color from parent element */
+}
+
+/* Application container styles */
+.app {
+  width: 80%;
+  /* Set the width of the app container */
+  margin: auto;
+  /* Center the app container */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* Start fully transparent */
+  }
+
+  100% {
+    opacity: 1;
+    /* End fully opaque */
+  }
+}

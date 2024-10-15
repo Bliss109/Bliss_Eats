@@ -1,0 +1,112 @@
+.main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.heading h1{
+    color: tomato;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+    margin: 1rem;
+}
+.search-bar{
+    margin: 1rem;
+    width: 400px;
+    height: 40px;
+    border: 1px solid tomato;
+    outline: none;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+}
+.container{
+    width: 80%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    margin-top: 30px;
+    gap: 10px;
+    row-gap: 40px;
+}
+.card{
+    width: 180px;
+    border-radius: 1rem;
+    background-color: tomato;
+    padding: 5px;
+}
+.card img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.card h3{
+    color: rgb(46, 31, 9);
+    font-size: 18px;
+}
+.indexContainer{
+    display: flex;
+    margin: 2.5rem 0;
+}
+.numBox{
+    width:  60px;
+    height: 30px;
+    background-color: rgb(54, 38, 38);
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    margin: 0 5px 0 5px;
+    border-radius: 1rem;
+}
+.numBox:hover{
+    background-color: rgb(82, 24, 13);
+    transition: 0.3s;
+}
+.numBox.active{
+    border-color:bisque;
+}
+.content img{
+    width: 90%;
+    height: 500px;
+}
+.content .inner-content{
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.8);
+    color: grey;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+.recipe-details{
+    width: 70%;
+    margin: 2rem auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.ingredients{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.instructions{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.ingredients h4{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+iframe{
+    height: 515px;
+    width: 100%;
+}
+.video {
+    width: 80%;
+    margin: 3rem auto;
+}

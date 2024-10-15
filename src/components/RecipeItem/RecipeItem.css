@@ -1,0 +1,186 @@
+/* Main food item container */
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    /* Smooth transition for hover effects */
+    animation: fadeIn 1s;
+    /* Fade-in animation on load */
+}
+
+/* Hover effects for food item */
+.food-item:hover {
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* Image styling */
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    /* Rounded corners for the top */
+}
+
+/* Container for food item info */
+.food-item-info {
+    padding: 20px;
+    /* Padding around the info section */
+}
+
+/* Name and rating container */
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    /* Space between name and rating */
+    align-items: center;
+    /* Align items in the center */
+    margin-bottom: 10px;
+    /* Space below the name and rating */
+}
+
+.food-item-name-rating p {
+    font-size: 20px;
+    /* Font size for name */
+    font-weight: 500;
+    /* Medium weight for emphasis */
+}
+
+/* Star rating image styling */
+#stars {
+    width: 70px;
+    /* Fixed width for star rating */
+    height: 70px;
+    /* Fixed height for star rating */
+}
+
+/* Description styling */
+.food-item-desc {
+    color: #767676;
+    /* Gray color for description */
+    font-size: 14px;
+    /* Font size for description */
+}
+
+/* Price styling */
+.food-item-price {
+    color: tomato;
+    /* Tomato color for price */
+    font-size: 22px;
+    /* Larger font size for emphasis */
+    font-weight: 500;
+    /* Medium weight */
+    margin: 10px 0;
+    /* Margin for spacing */
+}
+
+/* Category styling */
+.food-item-category {
+    color: rgb(114, 98, 95);
+    /* Specific color for category */
+    font-size: 20px;
+    /* Font size for category */
+    font-weight: 500;
+    /* Medium weight */
+    margin: 15px 0;
+    /* Margin for spacing */
+}
+
+/* Stars in name and rating */
+.food-item-name-rating img {
+    width: 30px;
+    /* Fixed width for star icon */
+    height: 30px;
+    /* Fixed height for star icon */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin-left: 10px;
+    /* Space between name and stars */
+}
+
+/* Hover effect on name and rating */
+.food-item-name-rating:hover {
+    opacity: 0.8;
+    /* Slight opacity change on hover */
+}
+
+/* View details button styling */
+.view-details-button {
+    border: none;
+    /* No border */
+    padding: 10px;
+    /* Padding inside the button */
+    border-radius: 4px;
+    /* Rounded corners */
+    color: white;
+    /* White text */
+    background-color: tomato;
+    /* Tomato background */
+    font-size: 15px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+/* Icon sizes */
+#add_icon,
+#remove,
+#green {
+    width: 30px;
+    /* Fixed width for icons */
+    height: 30px;
+    /* Fixed height for icons */
+}
+
+/* Container for the image */
+.food_item_img_container {
+    position: relative;
+    /* Position relative for absolute children */
+}
+
+/* Add icon positioning */
+.food_item_img_container .add {
+    width: 35px;
+    /* Size for add icon */
+    position: absolute;
+    /* Positioning relative to parent */
+    bottom: 15px;
+    /* Space from the bottom */
+    right: 15px;
+    /* Space from the right */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    border-radius: 15%;
+    /* Rounded corners */
+}
+
+/* Counter styling */
+.food-item-counter {
+    position: absolute;
+    /* Absolute positioning */
+    bottom: 15px;
+    /* Space from the bottom */
+    right: 15px;
+    /* Space from the right */
+    display: flex;
+    /* Flex container for items */
+    align-items: center;
+    /* Center align items */
+    gap: 10px;
+    /* Space between counter elements */
+    padding: 6px;
+    /* Padding inside counter */
+    border-radius: 50px;
+    /* Rounded corners */
+    background-color: rgb(209, 184, 179);
+    /* Background color for counter */
+}
+
+/* Icon sizes in the counter */
+.food-item-counter img {
+    width: 30px;
+    /* Size for counter icons */
+}

@@ -1,0 +1,141 @@
+/* Navbar container styles */
+.navbar {
+    padding: 20px 5px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.navbar .logo {
+    width: 70px;
+}
+
+/* Navbar menu styles */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: rgb(121, 104, 70);
+}
+
+/* Menu link styles */
+.navbar-menu a,
+.navbar-menu .link {
+    font-size: 15px;
+}
+
+/* Navbar right section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Button styling */
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: brown;
+    border: 1px solid red;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: pink;
+}
+
+/* Active link styles */
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(105, 105, 89);
+}
+
+/* List item styling */
+.navbar li {
+    cursor: pointer;
+}
+
+/* Image styles */
+.navbar img {
+    border-radius: 15px;
+}
+
+.navbar-right img {
+    width: 20px;
+}
+
+/* Dot notification style */
+.search-icon .dot {
+    position: absolute;
+    min-width: 7px;
+    min-height: 7px;
+    background-color: brown;
+    border-radius: 5px;
+    top: 39px;
+}
+
+/* Responsive styles for max-width: 900px */
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive styles for max-width: 1050px */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive styles for max-width: 750px */
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar .logo {
+        width: 70px;
+        height: 60px;
+    }
+}

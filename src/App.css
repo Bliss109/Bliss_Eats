@@ -1,0 +1,62 @@
+/* Root element styling */
+#root {
+  max-width: 1280px;
+  /* Maximum width for the root element */
+  margin: 0 auto;
+  /* Center the root element horizontally */
+  padding: 2rem;
+  /* Padding around the root element */
+  text-align: center;
+  /* Center text within the root element */
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  /* Set the height of the logo */
+  padding: 1.5em;
+  /* Padding around the logo */
+  will-change: filter;
+  /* Optimize for filter changes */
+  transition: filter 300ms;
+  /* Smooth transition for filter changes */
+}
+
+/* Hover effect for logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  /* Apply drop shadow on hover */
+}
+
+/* Hover effect for React logo */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  /* Apply specific drop shadow for React logo */
+}
+
+/* Animation keyframes for logo spinning */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+    /* Start rotation from 0 degrees */
+  }
+
+  to {
+    transform: rotate(360deg);
+    /* End rotation at 360 degrees */
+  }
+}
+
+/* Animation for links with logos */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+    /* Spin animation for the second link's logo */
+  }
+}
+
+/* Card component styling */
+.card {
+  padding: 2em;
+  /* Padding around card components */
+}

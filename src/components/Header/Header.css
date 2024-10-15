@@ -1,0 +1,102 @@
+.header {
+    height: 38vw;
+    /* Dynamic height based on viewport width */
+    margin: 30px auto;
+    /* Centered margin with spacing */
+    background: url("../../../public/header.jpg") no-repeat;
+    /* Background image without repeat */
+    background-size: contain;
+    /* Scale background to fit */
+    position: relative;
+    /* For absolute positioning within */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.header-content {
+    position: absolute;
+    /* Position relative to .header */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: start;
+    /* Align items to the start (left) */
+    gap: 1.5vw;
+    /* Vertical gap between items */
+    bottom: 10%;
+    /* Position near the bottom of the header */
+    max-width: 50%;
+    /* Maximum width for responsiveness */
+    left: 6vw;
+    /* Space from the left edge */
+    animation: fadeIn 3s;
+    /* Smooth fade-in animation */
+}
+
+.header-content h2 {
+    font-weight: 500;
+    color: rgb(65, 48, 18);
+    /* Dark color for readability */
+    font-size: max(4.5vw, 20px);
+    /* Responsive font size */
+}
+
+.header-content p {
+    color: black;
+    /* Dark text color */
+    font-size: 1vw;
+    /* Responsive font size */
+}
+
+.header-content button {
+    border: none;
+    color: #ff0404;
+    /* Text color */
+    font-weight: 700;
+    padding: 1vw 2.3vw;
+    /* Responsive padding */
+    background-color: pink;
+    /* Button background */
+    font-size: max(1vw, 13px);
+    /* Responsive font size */
+    border-radius: 50px;
+    /* Rounded button */
+}
+
+.header-content button:hover {
+    background-color: #634646;
+    /* Hover background color */
+    transition: 0.3s;
+    /* Smooth hover transition */
+}
+
+/* Medium screen adjustments */
+@media (max-width: 1050px) {
+    .header {
+        height: 38vw;
+        /* Maintain height */
+    }
+
+    .header-content {
+        max-width: 45%;
+        /* Adjust content width */
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 750px) {
+    .header-content {
+        max-width: 65%;
+        /* Increase content width */
+    }
+
+    .header-content p {
+        display: none;
+        /* Hide description for smaller screens */
+    }
+
+    .header-content button {
+        padding: 2vw 4vw;
+        /* Increase padding */
+    }
+}
