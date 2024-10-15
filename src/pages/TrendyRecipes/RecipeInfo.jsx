@@ -25,10 +25,12 @@ const RecipeInfo = () => {
 
     // Extract video ID from the recipe's YouTube link
     let vId = ""; // Initialize video ID variable
-    if (item) {
+    if (item && item.strYoutube) {
         const url = item.strYoutube; // Get YouTube URL from item
         const str = url.split("="); // Split URL to extract the video ID
         vId = str[str.length - 1]; // Get the last segment as the video ID
+    } else {
+        console.warn("YouTube URL is not available.");
     }
 
     return (

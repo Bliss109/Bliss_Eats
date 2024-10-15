@@ -23,7 +23,7 @@ import rating from './rating-star.png';
 // Food Images
 import quail_salad from './quail_salad.jpg';
 import roast_chicken from './roast_chicken.jpg';
-import spaghetti from './spaghetti.jpg';
+import spaghetti from './Spaghetti.jpg';
 import healthy_snack from './healthy_snack.avif';
 import drinks from './drinks.webp';
 import desserts from './desserts.jpeg';

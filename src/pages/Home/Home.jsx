@@ -11,6 +11,7 @@ const Home = () => {
 
   return (
     <div>
+      
       <Header /> 
       <Explore category={category} setCategory={setCategory} /> 
       <RecipeDisplay category={category} /> 
