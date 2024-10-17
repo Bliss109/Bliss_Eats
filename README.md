@@ -20,4 +20,4 @@ To run the application, ensure you have the following installed:
 ### Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Bliss109/bliss-eats.git
+   git clone https://github.com/Bliss109/Bliss_Eats.git
