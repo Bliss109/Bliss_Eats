@@ -25,7 +25,7 @@ To run the application, ensure you have the following installed:
 ### Contact
 For inquiries, please reach out to:
 
-Your Name - cindyogutu0@gmail.com
+Email- cindyogutu0@gmail.com
 GitHub: Bliss109
 
 ### Acknowledgements
