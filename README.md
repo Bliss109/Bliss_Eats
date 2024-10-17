@@ -21,3 +21,33 @@ To run the application, ensure you have the following installed:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Bliss109/Bliss_Eats.git
+
+### Directory Structure
+bliss-eats/
+│
+├── public/                # Public assets
+│   └── ...                # Other public assets
+│
+├── src/                   # Source files
+│   ├── assets/            # Images, icons, and other static assets
+│   ├── components/        # Reusable components
+│   ├── pages/             # Application pages
+│   ├── context/           # Global state management
+│   ├── App.js             # Main application component
+│   └── main.jsx           # Application entry point
+│
+└── package.json           # Project metadata and dependencies
+
+### Contact
+For inquiries, please reach out to:
+
+Your Name - cindyogutu0@gmail.com
+GitHub: Bliss109
+
+### Acknowledgements
+Thanks to the MealDB API for providing recipe data.
+Inspired by the culinary community and all the passionate food lovers out there!
+
+
+
+
