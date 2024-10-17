@@ -1,4 +1,6 @@
 # Bliss Eats
+url: https://bliss-eats.vercel.app/
+alternatively: https://blisseats.netlify.app/
 
 ## Overview
 **Bliss Eats** is a user-friendly web application that allows users to explore, add, and share delicious recipes from various cuisines. Built with React and HTML/CSS, this platform focuses on enhancing the culinary experience by providing a seamless interface for food lovers to discover and share their favorite recipes.
