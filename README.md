@@ -22,22 +22,6 @@ To run the application, ensure you have the following installed:
    ```bash
    git clone https://github.com/Bliss109/Bliss_Eats.git
 
-### Directory Structure
-bliss-eats/
-│
-├── public/                # Public assets
-│   └── ...                # Other public assets
-│
-├── src/                   # Source files
-│   ├── assets/            # Images, icons, and other static assets
-│   ├── components/        # Reusable components
-│   ├── pages/             # Application pages
-│   ├── context/           # Global state management
-│   ├── App.js             # Main application component
-│   └── main.jsx           # Application entry point
-│
-└── package.json           # Project metadata and dependencies
-
 ### Contact
 For inquiries, please reach out to:
 
